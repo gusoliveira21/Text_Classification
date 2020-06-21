@@ -185,12 +185,13 @@ An optional part of the pre-processing step is correcting the misspelled words. 
 
 .. code:: python
 
-  from autocorrect import spell
+  from autocorrect import Speller
 
-  print spell('caaaar')
-  print spell(u'mussage')
-  print spell(u'survice')
-  print spell(u'hte')
+  spell = Speller()
+  spell('caaaar')
+  spell(u'mussage')
+  spell(u'survice')
+  spell(u'hte')
 
 Result:
 
